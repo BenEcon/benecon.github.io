@@ -1,0 +1,68 @@
+#
+# Refer to https://jekyllrb.com/docs/home/ for Jekyll
+#
+
+# Site settings
+title: ALEX's BLOG
+email: weixiang.chen@outlook.com
+description: > # this means to ignore newlines until "baseurl:"
+  Record my learning process!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://chenweixiang.github.io" # the base hostname & protocol for your site
+twitter_username: Weixiang_Chen
+github_username: chenweixiang
+
+# Change default port number from 4000 to 4004 in order to avoid FreeGate's impact
+# Refer to https://jekyllrb.com/docs/configuration/default/
+host : 127.0.0.1
+port : 4004
+
+# Include Gems
+#plugins: [jekyll-paginate]
+
+# Build settings
+markdown: kramdown
+
+# Highlight by Rouge
+highlighter: rouge
+
+# Post excerpts
+excerpt_separator: <!--more-->
+
+# Disable Pagination: Items should be displayed per page
+#paginate: 10
+#paginate_path: "page:num"
+
+# Make post visible which has date in the future
+future: true
+
+# Default settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      author: "Chen Weixiang"
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: [with_toc_data]
+
+# Refer to the following link for kramdown syntax
+#   https://kramdown.gettalong.org/options.html
+kramdown:
+  input:          GFM
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+
+# Refer to the following link for Rouge syntax
+#   http://rouge.jneen.net/
+rouge:
+  linenos:        nil
