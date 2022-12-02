@@ -35,10 +35,12 @@
     });
     //-->
     </script>
-    
-    <script type="text/javascript" id="MathJax-script" async
+    {% if page.use_math %}
+        {% include -mathjax_support.html %}
+    {% endif %}
+    <!-- <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
+    </script> -->
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
