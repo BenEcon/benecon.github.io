@@ -1,0 +1,80 @@
+.right .github-fork-ribbon {
+    background-color: #563d7c;
+}
+
+.container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hint {
+    color: #563d7c;
+    display: inline-block;
+    font-weight: bold;
+    left: 0px; /* match the left margin of the top-level nav items */
+    position: relative;
+    top: 0.5em;
+}
+.hint:before {
+    content: '↑';
+    display: block;
+    font-size: 3em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#toc {
+    width: 20%;
+    overflow: auto;
+    border: 1px solid #ddd;
+    webkit-border-radius: 1px;
+    moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+#toc ul, #toc li {
+    list-style: circle inside; /* none; */
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 1.4em;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+    /* override the Affix plugin so that the navigation isn't sticky */
+    nav.affix[data-toggle='toc'] {
+        position: static;
+    }
+
+    /* display the second-level nav */
+    nav[data-toggle='toc'] .nav .nav {
+        display: block;
+    }
+
+    .hint {
+        top: 0;
+    }
+}
+
+/* large screens */
+@media (min-width: 768px) {
+    .container-fluid {
+        /* width: 1170px; */
+    }
+    h1:first-child {
+        margin-top: 0;
+    }
+}
