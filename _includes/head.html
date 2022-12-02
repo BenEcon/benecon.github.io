@@ -35,10 +35,12 @@
     });
     //-->
     </script>
-
+    {% if page.use_math %}
+        {% include mathjax_support.html %}
+    {% endif %}
     <!-- The MathJax CDN hosted at cdn.mathjax.org will be shutting down on April 30, 2017. See https://www.mathjax.org/cdn-shutting-down/. Also see the online math formula editor https://math.edrawsoft.cn/index.html -->
-    <script type="text/javascript" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML"></script>
+    <!-- <script type="text/javascript" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML"></script> -->
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
