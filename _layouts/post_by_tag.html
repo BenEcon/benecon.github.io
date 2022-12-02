@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div>
+    {% assign sortedtags = site.tags | sort %}
+    {% for tag in sortedtags %}
+        <h1>{{ tag[0] }}</h1>
+        {% assign onetag = tag[0] %}
+        {% if site.tags[onetag] %}
+            {% for post in site.tags[onetag] %}
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <br />
+            {% endfor %}
+        {% else %}
+            <p>There are no posts for this tag.</p>
+        {% endif %}
+    {% endfor %}
+</div>
