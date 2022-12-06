@@ -60,7 +60,9 @@ $$\begin{aligned}
 			  z&=\frac{\tau}{2}
 		\end{aligned}$$
 
-$\left\rvert\int_{\gamma_2} f(z) d z\right\rvert \rightarrow 0$
+<div class="content-msg">
+	$\left\rvert\int_{\gamma_2} f(z) d z\right\rvert \rightarrow 0$
+</div>
 
 $$\left\rvert\int_{\gamma_{2}} f(z) d z\right\rvert=\left\rvert \int_{\gamma_2} \frac{e^{-z^{2}}}{1+e^{-2 z \tau}} d z \right\rvert, \quad \quad \begin{array} 
 			{l}z=R+i t \\ 
@@ -75,7 +77,9 @@ $$\begin{aligned}
   =&\int_{0}^{ \sqrt{\frac{\pi}{2}}} \frac{e^{-R^{2}+t^{2}}}{\left\rvert 1-e^{-2 \sqrt{\frac{\pi}{2}}R} e^{2 \sqrt{\frac{\pi}{2}} t}\right\rvert} d t \rightarrow 0\\
 \end{aligned}$$
 
-$\left\rvert\int_{\gamma_4} f(z) d z\right\rvert \rightarrow 0$
+<div class="content-msg">
+	$\left\rvert\int_{\gamma_4} f(z) d z\right\rvert \rightarrow 0$
+</div>
 
 $$\left\rvert\int_{\gamma_{4}} f(z) d z\right\rvert=\left\rvert \int_{\gamma_4} \frac{e^{-z^{2}}}{1+e^{-2 z \tau}} d z \right\rvert, \quad \quad \begin{array} 
 			{l}z=-R+i t \\ 
