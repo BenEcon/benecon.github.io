@@ -229,6 +229,7 @@ Configuration file: /media/chenwx/Work/repo/blog/_config.yml
 * [Ruby](https://www.ruby-lang.org/en/)
 * [Node.js](https://nodejs.org/)
 * [Markdown](http://www.markdown.cn)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 * [Atom](https://atom.io)
 * [Atom on GitHub](https://github.com/atom/atom)
