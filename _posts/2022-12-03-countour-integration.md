@@ -8,8 +8,7 @@ use_math: true
 
 ![Countour_Integration](/assets/Countour_Integration.pdf)
 
-<div class="info-msg">
-	<i class="fa fa-info-circle"></i>
+<div class="content-msg">
 	$\int_{-\infty}^{\infty} e^{-x^{2}} d x$: analytical function: $f(z)=\frac{e^{-z^{2}}}{g(z)}$
 </div>
 
