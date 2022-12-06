@@ -13,15 +13,18 @@ use_math: true
 </div>
 
 
-$$\oint_C f(z) d z=\int_{\gamma_{1}}+\int_{\gamma_{2}}+\int_{\gamma_{3}}+\int_{\gamma_{4}}
+<div class="proof-msg">
+	$$\oint_C f(z) d z=\int_{\gamma_{1}}+\int_{\gamma_{2}}+\int_{\gamma_{3}}+\int_{\gamma_{4}}
 = 2 \pi i \sum {Res}[f(z)] $$
+</div>
 
 <div class="content-msg">
 	Choice of $g(z)$: $1+e^{-2 z \tau}$ - $\tau$: $\sqrt{\pi i}$
 </div>
 
 
-$$\begin{aligned} 
+<div class="proof-msg">
+	$$\begin{aligned} 
     & \int_{\gamma_{1}}+\int_{\gamma_{3}}=2 \pi i\sum \operatorname{Res}[f(z)] \\ 
   \ \ \Longrightarrow \ \ & \int_{-R}^{R} f(z) d z+\int_{R+i b}^{-R+i b} f(z) d z=\int_{-R}^{R} f(z) d z-\int_{-R}^{R} f(z+i b) d z\\
   \mathrel{\mathop{\ \ \Longrightarrow \ \ }\limits^{\lim _{R \rightarrow \infty}}_{}} &\int_{-\infty}^{\infty} [f(z)-f(z+i b) ]d z=2 \pi i\sum \operatorname{Res}[f(z)]
@@ -46,12 +49,14 @@ $$\begin{aligned}
 \Rightarrow & \tau =\sqrt{\pi i k} \quad \text{ let k = 1}\\
 \Rightarrow & \tau =\sqrt{\pi i}\\
 \end{aligned}$$
+</div>
 
 <div class="content-msg">
 	Poles of $f(z)$		
 </div>
 
-Poles: 
+<div class="proof-msg">
+	Poles: 
 $$\begin{aligned} 
 			 1+e^{-2 z \tau} &=0 \\ 
 			 e^{-2 z \tau} &=-1=e^{i \pi(2 k+1)} \quad k \in \mathbb{Z}\\
@@ -59,12 +64,14 @@ $$\begin{aligned}
 			  z&=\frac{\tau}{2}(2 k+1), k=0\\
 			  z&=\frac{\tau}{2}
 		\end{aligned}$$
+</div>
 
 <div class="content-msg">
 	$\left\rvert\int_{\gamma_2} f(z) d z\right\rvert \rightarrow 0$
 </div>
 
-$$\left\rvert\int_{\gamma_{2}} f(z) d z\right\rvert=\left\rvert \int_{\gamma_2} \frac{e^{-z^{2}}}{1+e^{-2 z \tau}} d z \right\rvert, \quad \quad \begin{array} 
+<div class="proof-msg">
+	$$\left\rvert\int_{\gamma_{2}} f(z) d z\right\rvert=\left\rvert \int_{\gamma_2} \frac{e^{-z^{2}}}{1+e^{-2 z \tau}} d z \right\rvert, \quad \quad \begin{array} 
 			{l}z=R+i t \\ 
 			 d z=i d t
 		\end{array},  \quad t \in [0,\sqrt{\frac{\pi}{2}}]$$
@@ -76,12 +83,14 @@ $$\begin{aligned}
   \leq & \int_{0}^{\sqrt{\frac{\pi}{2}}} \frac{e^{-R^{2}+t^{2}}}{\rvert-\rvert e^{-2 \tau R} e^{-2 \tau i t} \mid\mid } d t\\
   =&\int_{0}^{ \sqrt{\frac{\pi}{2}}} \frac{e^{-R^{2}+t^{2}}}{\left\rvert 1-e^{-2 \sqrt{\frac{\pi}{2}}R} e^{2 \sqrt{\frac{\pi}{2}} t}\right\rvert} d t \rightarrow 0\\
 \end{aligned}$$
+</div>
 
 <div class="content-msg">
 	$\left\rvert\int_{\gamma_4} f(z) d z\right\rvert \rightarrow 0$
 </div>
 
-$$\left\rvert\int_{\gamma_{4}} f(z) d z\right\rvert=\left\rvert \int_{\gamma_4} \frac{e^{-z^{2}}}{1+e^{-2 z \tau}} d z \right\rvert, \quad \quad \begin{array} 
+<div class="proof-msg">
+	$$\left\rvert\int_{\gamma_{4}} f(z) d z\right\rvert=\left\rvert \int_{\gamma_4} \frac{e^{-z^{2}}}{1+e^{-2 z \tau}} d z \right\rvert, \quad \quad \begin{array} 
 			{l}z=-R+i t \\ 
 			 d z=i d t
 		\end{array},  \quad t \in [0,\sqrt{\frac{\pi}{2}}]$$
@@ -93,12 +102,14 @@ $$\begin{aligned}
     \leq & \int_{0}^{\sqrt{\frac{\pi}{2}}} \frac{e^{-R^{2}+t^{2}}}{\rvert-\rvert e^{2 \tau R} e^{-2 \tau i t} \mid\mid } d t\\
     =&\int_{0}^{ \sqrt{\frac{\pi}{2}}} \frac{e^{-R^{2}+t^{2}}}{\left\rvert 1-e^{2 \sqrt{\frac{\pi}{2}}R} e^{2 \sqrt{\frac{\pi}{2}} t}\right\rvert} d t \rightarrow 0\\
   \end{aligned}$$
+</div>
 
 <div class="content-msg">
 	$\int_{-\infty}^{\infty} e^{-x^{2}} d x$
 </div>
 
-$$\begin{aligned} 
+<div class="proof-msg">
+	$$\begin{aligned} 
 	 & \int_{\gamma_{1}} + \int_{\gamma_{3}}=\int_{-\infty}^{\infty} e^{-x^{2}} d x=2 \pi i \operatorname{Res}[f(z)] \\ 
 	=& 2 \pi i \lim _{z \rightarrow \tau / 2}(z-\tau / 2) \frac{e^{-z^{2}}}{1+e^{-2 z \tau}} \\
 	=& 2 \pi\left(\lim _{z \rightarrow \tau / 2} \frac{z-\tau / 2}{1+e^{-2 z \tau}}\right)\left(\lim _{z \rightarrow \tau/{2}} e^{-z^{2}}\right)\\
@@ -106,3 +117,4 @@ $$\begin{aligned}
 	=& =\frac{\pi i}{\sqrt{\pi i}} e^{3 \tau^{2} / 4} =-\sqrt{\pi i} e^{i 3 \pi / 4}=-\sqrt{\pi} \sqrt{i} e^{i 3\pi / 4}\\
 	=& -\sqrt{\pi} e^{i \pi / 4} e^{i \pi / 4}=-\sqrt{\pi} e^{i \pi}=-\sqrt{\pi}(-1) = \sqrt{\pi}
 \end{aligned}$$
+</div>
