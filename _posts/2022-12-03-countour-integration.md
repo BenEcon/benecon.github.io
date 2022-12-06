@@ -8,6 +8,10 @@ use_math: true
 
 ![Countour_Integration](/assets/Countour_Integration.pdf)
 
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #31708f; background-color: #d9edf7; border-color: #bce8f1;">
+<strong>&#9432; Info:<br/></strong> $\int_{-\infty}^{\infty} e^{-x^{2}} d x$: analytical function: $f(z)=\frac{e^{-z^{2}}}{g(z)}$
+</div>
+
 $\int_{-\infty}^{\infty} e^{-x^{2}} d x$: analytical function: $f(z)=\frac{e^{-z^{2}}}{g(z)}$
 
 $$\oint_C f(z) d z=\int_{\gamma_{1}}+\int_{\gamma_{2}}+\int_{\gamma_{3}}+\int_{\gamma_{4}}
