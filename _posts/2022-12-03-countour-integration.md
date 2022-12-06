@@ -28,7 +28,6 @@ I am an error message
 	$\int_{-\infty}^{\infty} e^{-x^{2}} d x$: analytical function: $f(z)=\frac{e^{-z^{2}}}{g(z)}$
 </div>
 
-
 <div class="proof-msg">
 	$$\oint_C f(z) d z=\int_{\gamma_{1}}+\int_{\gamma_{2}}+\int_{\gamma_{3}}+\int_{\gamma_{4}}
 = 2 \pi i \sum {Res}[f(z)] $$
@@ -37,7 +36,6 @@ I am an error message
 <div class="content-msg">
 	Choice of $g(z)$: $1+e^{-2 z \tau}$ - $\tau$: $\sqrt{\pi i}$
 </div>
-
 
 <div class="proof-msg">
 	$$\begin{aligned} 
@@ -48,15 +46,18 @@ I am an error message
 
 Choose $g(z)$ such that $f(z)-f(z+i b)=e^{-z^2}$, however, when the above holds, it must be that $b$ is a complex number. So, we choose $\tau$ such that $f(z)-f(z+\tau)=e^{-z^2}$. That is, $\frac{e^{-z^{2}}}{g(z)}-\frac{e^{-(z+\tau)^{2}}}{g(z+\tau)}=e^{-z^{2}}$. Generally, $g(z)$ is hard to find. To simplify our analysis, it is assumed that $y$ is periodic in $\tau$, we come to:
 
-$$\begin{aligned} 
-      & \frac{e^{-z^{2}}}{g(z)}-\frac{e^{-(z+\tau)^{2}}}{g(z)}=e^{-z^{2}} \\ 
+$$
+\begin{aligned}
+      & \frac{e^{-z^{2}}}{g(z)}-\frac{e^{-(z+\tau)^{2}}}{g(z)}=e^{-z^{2}} \\
     \Longrightarrow& \frac{e^{-z^{2}}}{g(z)}-\frac{e^{-z^{2}} e^{-2 z \tau-\tau^{2}}}{g(z)}=e^{-z^{2}} \\
     \Longrightarrow& g(z)=1-e^{-2 z \tau-\tau^{2}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Because it is assumed that $y$ is periodic in $\tau$, we have
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 & g(z)=g(z+\tau) \\
 \Leftrightarrow & 1-e^{-2 z \tau-\tau^{2}}=1-e^{-2(z+\tau) \tau-\tau^{2}} = 1-e^{-2 z \tau-\tau^{2}}e^{-2 \tau^{2}}\\
 \Leftrightarrow & e^{-2 \tau^{2}} = 1 = e^{2\pi i k}, k \in \mathbb{N}\\
@@ -64,7 +65,9 @@ $$\begin{aligned}
 \Rightarrow & \tau^{2} =\pi i k\\
 \Rightarrow & \tau =\sqrt{\pi i k} \quad \text{ let k = 1}\\
 \Rightarrow & \tau =\sqrt{\pi i}\\
-\end{aligned}$$
+\end{aligned}
+$$
+
 </div>
 
 <div class="content-msg">
@@ -92,13 +95,16 @@ $$\begin{aligned}
 			 d z=i d t
 		\end{array},  \quad t \in [0,\sqrt{\frac{\pi}{2}}]$$
 
-$$\begin{aligned} 
+$$
+\begin{aligned}
   & \left\rvert\int_{\gamma_2} f(z) d z\right\rvert\\
   = & \left\rvert\int_{0}^{\sqrt{\frac{\pi}{2}}} \frac{e^{-(R+i t)^{2}}}{1+e^{-2(R+i t) \tau}} i d t\right\rvert\\
   \leq & \int_{0}^{\sqrt{\frac{\pi}{2}}} \frac{\left\rvert e^{-R^{2}-2 R i t+t^{2}}\right\rvert}{\left\rvert 1+e^{-2 \tau(R+i t)} \right\rvert}dt, \quad \rvert a-b\rvert \geq \rvert\rvert a\rvert-(b)\rvert\\
   \leq & \int_{0}^{\sqrt{\frac{\pi}{2}}} \frac{e^{-R^{2}+t^{2}}}{\rvert-\rvert e^{-2 \tau R} e^{-2 \tau i t} \mid\mid } d t\\
   =&\int_{0}^{ \sqrt{\frac{\pi}{2}}} \frac{e^{-R^{2}+t^{2}}}{\left\rvert 1-e^{-2 \sqrt{\frac{\pi}{2}}R} e^{2 \sqrt{\frac{\pi}{2}} t}\right\rvert} d t \rightarrow 0\\
-\end{aligned}$$
+\end{aligned}
+$$
+
 </div>
 
 <div class="content-msg">
