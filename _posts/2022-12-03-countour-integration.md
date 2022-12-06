@@ -16,7 +16,10 @@ use_math: true
 $$\oint_C f(z) d z=\int_{\gamma_{1}}+\int_{\gamma_{2}}+\int_{\gamma_{3}}+\int_{\gamma_{4}}
 = 2 \pi i \sum {Res}[f(z)] $$
 
-Choice of $g(z)$: $1+e^{-2 z \tau}$ - $\tau$: $\sqrt{\pi i}$
+<div class="content-msg">
+	Choice of $g(z)$: $1+e^{-2 z \tau}$ - $\tau$: $\sqrt{\pi i}$
+</div>
+
 
 $$\begin{aligned} 
     & \int_{\gamma_{1}}+\int_{\gamma_{3}}=2 \pi i\sum \operatorname{Res}[f(z)] \\ 
@@ -44,7 +47,9 @@ $$\begin{aligned}
 \Rightarrow & \tau =\sqrt{\pi i}\\
 \end{aligned}$$
 
-Poles of $f(z)$
+<div class="content-msg">
+	Poles of $f(z)$		
+</div>
 
 Poles: 
 $$\begin{aligned} 
@@ -85,7 +90,9 @@ $$\begin{aligned}
     =&\int_{0}^{ \sqrt{\frac{\pi}{2}}} \frac{e^{-R^{2}+t^{2}}}{\left\rvert 1-e^{2 \sqrt{\frac{\pi}{2}}R} e^{2 \sqrt{\frac{\pi}{2}} t}\right\rvert} d t \rightarrow 0\\
   \end{aligned}$$
 
-$\int_{-\infty}^{\infty} e^{-x^{2}} d x$
+<div class="content-msg">
+	$\int_{-\infty}^{\infty} e^{-x^{2}} d x$
+</div>
 
 $$\begin{aligned} 
 	 & \int_{\gamma_{1}} + \int_{\gamma_{3}}=\int_{-\infty}^{\infty} e^{-x^{2}} d x=2 \pi i \operatorname{Res}[f(z)] \\ 
