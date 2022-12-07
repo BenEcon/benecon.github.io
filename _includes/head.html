@@ -1,17 +1,17 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- https://en.wikipedia.org/wiki/Favicon & http://www.antifavicon.com -->
-    <link rel="shortcut icon" href="/assets/favicon.ico"/>
-    <link rel="bookmark" href="/assets/favicon.ico"/>
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="bookmark" href="/assets/favicon.ico" />
 
-    <link rel="stylesheet" href="/css/gh-fork-ribbon.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap-toc.min.css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="/css/github.min.css">
-    <link rel="stylesheet" href="/css/screen.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap-toc.min.css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="/css/github.min.css" />
+    <link rel="stylesheet" href="/css/screen.css" media="screen" charset="utf-8" />
 
     <script src="/js/jquery-2.1.4.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
@@ -22,18 +22,22 @@
     <script src="/js/jquery-1.4.4.min.js"></script>
     <script src="/js/jquery.ztree.core-3.5.js"></script>
     <script src="/js/ztree_toc.js"></script>
-    <link rel="stylesheet" href="/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <link rel="stylesheet" href="/css/zTreeStyle/zTreeStyle.css" type="text/css" />
     <script type="text/javascript">
-    <!--
-    $(document).ready(function(){
-        $('#tree').ztree_toc({
-            is_auto_number:false,
-            is_expand_all:false,
-            use_head_anchor:true,
-            documment_selector:'.markdown-body'
-        });
-    });
+    < !-
+            $(document).ready(function () {
+                $("#tree").ztree_toc({
+                    is_auto_number: false,
+                    is_expand_all: false,
+                    use_head_anchor: true,
+                    documment_selector: ".markdown-body",
+                });
+            });
     //-->
+    </script>
+    <script src="https://unpkg.com/fast-image-zoom@7.0.1/dist/fast-image-zoom.js"></script>
+    <script>
+        imageZoom();
     </script>
     <!-- {% if page.use_math %}
         {% include _mathjax_support.html %}
@@ -46,10 +50,14 @@
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script> -->
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <title>
+        {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+    </title>
+    <meta name="description"
+        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ " /css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml" | prepend:
+        site.baseurl | prepend: site.url }}">
 </head>
